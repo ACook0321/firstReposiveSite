@@ -1,0 +1,165 @@
+.Main-Container{
+  display:grid;
+  width: 100%;
+  max-width: 1024;
+  min-width: 320;
+  height: auto;
+  
+  
+}
+
+.Top{
+  background-color: rgb(43,205,192);
+  
+  
+}
+.welcome{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 200;
+}
+
+.Bottom{
+  background-color: black;
+  
+}
+
+.title1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ 
+  padding: 80 0 80 0;
+}
+.title2{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ 
+  padding: 80 0 80 0;
+}
+.title3{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  padding: 80 0 80 0;
+}
+.box1{
+  width: 150px;
+  height: 25px;
+  background-color: rgb(51,168,221);
+}
+.box2{
+  width: 150px;
+  height: 25px;
+  background-color:rgb(244,103,49);
+}
+.box3{
+  width: 150px;
+  height: 25px;
+  background-color: rgb(43,205,192);
+}
+h2 {
+  color: white;
+  background-color: black;
+}
+h4 {
+  color: white;
+  background-color: black;
+}
+
+
+@media (max-width: 576px) {
+  .Main-Container {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: auto;
+    height: auto;
+    }
+  .Top{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    }
+  .title1{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    }
+  .title2{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   
+    }
+  .title3{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    }
+  .Bottom{
+    background-color: rgb(247,245,246);
+    grid-row-start: 2;
+    grid-row-end: 5;
+    }
+  h2 {
+    color:black;
+    background-color: rgb(247,245,246);
+    }
+  h4 {
+    color: black;
+    background-color: rgb(247,245,246);
+    
+    }
+}
+
+@media (min-width: 577px) {   
+    .Main-Container{
+      grid-template-columns: 15.625% 22.5% 15.625% 22.5% 15.625% 22.5% 15.625%;
+      grid-template-rows: 1fr 1fr;
+    }
+    .Top{grid-column-start: 1;
+      grid-column-end: 8;
+      grid-row-start: 1;
+      grid-row-end: 2;
+
+    }
+    .Bottom{
+      grid-column-start:1;
+      grid-column-end: 8;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+    }
+    .title1{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+    }
+    .title2{
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+    }
+    .title3{
+      grid-column-start: 6;
+      grid-column-end: 7;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+    }
+    
+}
+
